@@ -1,0 +1,59 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<lang en />
+
+<link rel="stylesheet" href="{% static 'styles/style.css' %}">
+<head></head>
+
+<body>
+    <div class="container">
+        <img src="{% static 'C:\Users\LHarew\SCDB\scballdb\dbapp\static\styles\download_360.png' %}" alt="Bulldog">
+    </div>
+    <nav id="topnav">
+        <a id="about" class=nav-link href="{%url 'home' %}">Home </a>
+        <a id="about" class="nav-link" href="{%url 'loginp' %}">login</a>
+        <a id="about" class="nav-link" href="{%url 'register' %}">Sign-up</a>
+    </nav>
+</body>
+<h1>
+</head>
+    SC STATE MENS BASKETBALL ALUMNI DATABASE</h1>
+
+<!-- get username-->
+
+<body>
+
+    <form action="#" method="POST">
+        <div id='box1' class="input-box">
+            <input type="text" placeholder=" Create a username" required name="Username"><label for>Forgot username?
+            </label>
+        </div>
+        <div id='box1' class="input-box">
+            <input type="text" placeholder=" Enter your email" required name="email"><label for>Forgot email? </label>
+        </div>
+        <div id='box1' class="input-box">
+            <input type="password" placeholder=" Enter your passcode" required name="passcode"><label for>Forgot
+                password? </label>
+        </div>
+        {% csrf_token %}
+
+
+        </label>
+          <!-- get passcode-->
+
+    <div id=box1 class=" input-box button">
+        <input id="box1" type="submit" value="Login">
+    </div>
+    </form>
+
+    </div>
+    <!-- get passcode-->
+
+ 
+
+
+</body>
+
+</html>
