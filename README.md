@@ -1,7 +1,9 @@
 Project Overview: Alumni Network Database with Django, HTML, and CSS
 
-The Alumni Network Database project aims to create a robust platform that not only manages player information efficiently but also provides networking opportunities within the community. The use of Django ensures a secure and scalable backend, while HTML and CSS contribute to an engaging and visually appealing user interface. Future expansion plans include the integration of a communication forum to further enhance community engagement.
-Features:
+ 
+ The Alumni Network Database project aims to create a robust platform that not only manages player information efficiently but also provides networking opportunities within the community. The use of Django ensures a secure and scalable backend, while HTML and CSS contribute to an engaging and visually appealing user interface. Future expansion plans include the integration of a communication forum to further enhance community engagement.
+
+Features-
 Database Management:
     Utilized Django's ORM to create and manage a detailed database containing information about former and current players.
     Implemented Django models to define the structure of the database.
@@ -36,7 +38,8 @@ Enhance Connections and Networking Opportunities:
 Implement features like user profiles, connections, and a newsfeed to foster networking.
 
 Explore Integration of a Communication Forum:
-Plan for future expansion by exploring the integration of a communication forum using 
+Plan for future expansion by exploring the integration of a communication forum.
+
 
 Login Page:
 
