@@ -12,7 +12,7 @@
         <img src="{% static 'C:\Users\LHarew\SCDB\scballdb\dbapp\static\styles\download_360.png' %}" alt="Bulldog">
     </div>
     <nav id="topnav">
-        <a id="about" class=nav-link href="{%url 'home' %}">Home </a>
+    
         <a id="about" class="nav-link" href="{%url 'loginp' %}">login</a>
         <a id="about" class="nav-link" href="{%url 'register' %}">Sign-up</a>
     </nav>
@@ -24,17 +24,22 @@
 <!-- get username-->
 
 <body>
-
+    <div id="reg">
+        {% if messages %}
+            {% for message in messages %}
+                <h2> {{ message  }}</h2>
+            {% endfor %}
+        {% endif %}
     <form action="#" method="POST">
         <div id='box1' class="input-box">
-            <input type="text" placeholder=" Create a username" required name="Username"><label for>Forgot username?
+            <input type="text" placeholder=" Create a username" required name="Username"><label >Forgot username?
             </label>
         </div>
         <div id='box1' class="input-box">
-            <input type="text" placeholder=" Enter your email" required name="email"><label for>Forgot email? </label>
+            <input type="text" placeholder=" Enter your email" required name="Email"><label for>Forgot email? </label>
         </div>
         <div id='box1' class="input-box">
-            <input type="password" placeholder=" Enter your passcode" required name="passcode"><label for>Forgot
+            <input type="password" placeholder=" Enter your passcode" required name="Password"><label for>Forgot
                 password? </label>
         </div>
         {% csrf_token %}

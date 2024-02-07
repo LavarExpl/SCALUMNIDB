@@ -7,23 +7,45 @@
     <title>Bulldog Tenacity</title>
     <link rel="stylesheet" href="{% static 'styles/style.css' %}">
     <style>
-      
+
     </style>
 </head>
 
+
 <body>
-    <div class="container">
-        <img src="{% static 'C:\Users\LHarew\SCDB\scballdb\dbapp\static\styles\download_360.png' %}" alt="Bulldog">
-    </div>
+
+
+
     <div class="text">
+
         <nav id="topnav">
+
+            <a src="{% static 'C:\Users\LHarew\SCDB\scballdb\dbapp\static\styles\download_360.png' %}"></a>
             <a id="about" class="nav-link" href="{%url 'home' %}">Home</a>
             <a id="about" class="nav-link" href="{%url 'loginp' %}">login</a>
-        <a id="about" class="nav-link" href="{%url 'register' %}">Sign-up</a>
-   
+            <a id="about" class="nav-link" href="{%url 'register' %}">Sign-up</a>
+
+
+
+            {% csrf_token %}
+
         </nav>
-        Content of the document......
-    </div>
+        
+        <body>
+
+
+        <img class="img1" src="{% static 'C:\Users\LHarew\SCDB\scballdb\dbapp\static\styles\team.jpg' %}" alt="team">
+        <img class="img1" src="{% static 'C:\Users\LHarew\SCDB\scballdb\dbapp\static\styles\me.jpg' %}" alt="me">
+        <img class="img1" src="{% static 'C:\Users\LHarew\SCDB\scballdb\dbapp\static\styles\3ofus.jpg' %}" alt="3ofus">
+        <p> Together we win!</p>
+</body>
+
+</html>
+</body>
+
+</div>
+<div class=""><a href="{%url 'loginp' %}"> Signout</a></div> 
+<h3> content to follow!</h3>
 </body>
 
 </html>
